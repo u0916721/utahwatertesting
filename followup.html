@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <title>Follow-Up Questions on Water Quality Data Submission</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Please answer these follow-up questions</h1>
+        <form id="followUpForm">
+            <div class="question">
+                <label for="easeOfSubmission">How easy was it to submit your data on a scale of 1-10?</label>
+                <input type="number" id="easeOfSubmission" name="easeOfSubmission" min="1" max="10" required />
+            </div>
+            <div class="question">
+                <label for="likesDislikes">What did you like or dislike about this method?</label>
+                <textarea id="likesDislikes" name="likesDislikes" rows="4" required></textarea>
+            </div>
+            <div class="question">
+                <label for="preferredMethod">Which method nails it (photos or text)? Tell us why?</label>
+                <select id="preferredMethod" name="preferredMethod" required>
+                    <option value="">Please select one</option>
+                    <option value="photos">Photos</option>
+                    <option value="text">Text</option>
+                </select>
+                <textarea id="reasonForPreference" name="reasonForPreference" rows="4" placeholder="Explain why"
+                    required></textarea>
+            </div>
+            <button id="submitFollowUp" class="submit-btn">Submit</button>
+        </form>
+    </div>
+    <script type="module" src="followup.js"></script>
+</body>
+
+</html>
