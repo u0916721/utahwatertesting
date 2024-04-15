@@ -83,7 +83,7 @@ async function writeUserData(PH, ammonia, nitrite, nitrate, location, date) {
         location: location,
         date: date
     }).then(() => {
-        window.location.href = "/data.html";
+        window.location.href = "/utahwatertesting/data.html";
     });
 }
 function submitFollowUpData() {
